@@ -1,7 +1,8 @@
 /**
  * Created by xiaoma on 2017/7/31.
+ * 
  */
-var SwipeImage = (function (win, doc) {
+var fun = function (win, doc) {
     var viewHeight = win.innerHeight || doc.body.clientHeight || doc.documentElement.clientHeight,
         container = doc.querySelector('.container'),
         imagesContainer = doc.querySelector('.images_container'),
@@ -99,4 +100,8 @@ var SwipeImage = (function (win, doc) {
     return {
         init: init
     }
-})(window, document);
+};
+console.log(fun);
+var SwipeImage = fun(window, document);
+
+console.log(SwipeImage);
